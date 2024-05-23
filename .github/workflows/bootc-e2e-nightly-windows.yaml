@@ -201,7 +201,7 @@ jobs:
           -e OUTPUT_FOLDER=/data \
           -e DEBUG=true \
           -v $PWD:/data:z \
-          -v $PWD/secrets.txt:/opt/pde2e-runner/secrets.txt:z \
+          # -v $PWD/secrets.txt:/opt/pde2e-runner/secrets.txt:z \
           quay.io/odockal/pde2e-runner:v0.0.1-windows  \
               pd-e2e/runner.ps1 \
                 -targetFolder pd-e2e \
